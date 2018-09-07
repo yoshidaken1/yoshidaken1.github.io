@@ -15,15 +15,16 @@
     <textarea id= 'ta'></textarea>
     
     <p>
-        <input type="button" value="前のページへ戻る" onclick="sendCmd()">
+        <input type="button" value="入力" onclick="sendCmd()">
     </p>
     
     <script>
         function sendCmd(){
-            alert('aaa')
+            alert('---sendCmd() in---')
             cmd = document.getElementById('ta').value
-            alert(cmd)
-                    
+            //alert(cmd)
+            console.log('cmd =',cmd)
+            console.log('replaced =' cmd.replace(/(\n|\r|\r\n)/gm, '<br>') )       
         }
     </script>
   </body>
