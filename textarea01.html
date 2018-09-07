@@ -14,15 +14,17 @@
 
     <textarea id= 'ta'></textarea>
     
-    <input type="button" id="btn">
-    
-    <!-- <input type="button" id="btn"> -->
     <p>
-        <input type="button" value="前のページへ戻る" onclick="history.back()">
+        <input type="button" value="前のページへ戻る" onclick="sendCmd()">
     </p>
     
     <script>
-        alert('aaa')
+        function sendCmd(){
+            alert('aaa')
+            cmd = document.getElementById('ta')
+            alert(cmd)
+                    
+        }
     </script>
   </body>
 </html>
