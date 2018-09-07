@@ -23,8 +23,10 @@
             alert('---sendCmd() in---')
             cmd = document.getElementById('ta').value
             //alert(cmd)
-            console.log('cmd =',cmd)
-            console.log('replaced:', cmd.replace(/(\n|\r|\r\n)/gm, '<br>') )       
+            console.log('before: cmd =',cmd)
+            rpl = cmd.replace(/(\n|\r|\r\n)/gm, '<br>')
+            console.log('after: cmd =',cmd)
+            console.log('replaced: rpl =:', rpl)
         }
     </script>
   </body>
